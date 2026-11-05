@@ -1,0 +1,985 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dra. Carolina Mendes | Nutricionista da mulher na menopausa | Salto, SP</title>
+<meta name="description" content="Carolina Mendes, nutricionista (CRN 3 16089). Ajudo mulheres no climatério e na menopausa a saírem do ciclo de tentativa, frustração e abandono. On-line e presencial em Salto, SP.">
+<meta property="og:title" content="Dra. Carolina Mendes | Seu corpo mudou. Sua estratégia também precisa.">
+<meta property="og:description" content="Nutrição para mulheres no climatério e na menopausa. On-line e presencial em Salto, SP.">
+<meta property="og:image" content="https://nutri-carolinamendes.vercel.app/img/carol-hero.jpg?v=1">
+<meta property="og:url" content="https://nutri-carolinamendes.vercel.app/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<link rel="canonical" href="https://nutri-carolinamendes.vercel.app/">
+<meta name="theme-color" content="#161834">
+<link rel="icon" type="image/png" href="img/favicon.png?v=1">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png?v=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400;1,9..144,500&family=Albert+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --marinho:#20234A;
+  --marinho-medio:#2C3062;
+  --noite:#14162F;
+  --laranja:#E0782A;
+  --laranja-claro:#F2A35E;
+  --folha:#6E8F38;
+  --folha-clara:#A9C46A;
+  --musgo:#2F3F1E;
+  --papel:#F6F2EB;
+  --papel-2:#EDE6DA;
+  --tinta:#191B32;
+  --texto:#34364F;
+  --suave:#62647D;
+  --linha:rgba(32,35,74,.13);
+  --display:"Fraunces", Georgia, "Times New Roman", serif;
+  --corpo:"Albert Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --gutter:clamp(18px, 5vw, 64px);
+  --largura:1240px;
+  --mola:cubic-bezier(.2,.7,.2,1);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--papel);color:var(--texto);font-family:var(--corpo);font-size:1.0625rem;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+@supports (overflow:clip){body{overflow-x:clip}}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--display);font-weight:400;color:var(--tinta);margin:0;letter-spacing:-.015em;font-optical-sizing:auto}
+h2{font-size:clamp(2.1rem, 4.4vw, 3.5rem);line-height:1.05;text-wrap:balance}
+h3{font-size:1.5rem;line-height:1.15}
+em{font-style:italic}
+h1 em,h2 em{color:var(--laranja)}
+p{margin:0}
+.wrap{max-width:var(--largura);margin:0 auto;padding:0 var(--gutter)}
+.secao{padding:clamp(88px, 11vw, 148px) 0}
+.rotulo-secao{display:inline-flex;align-items:center;gap:10px;font-size:.82rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--laranja);margin-bottom:20px}
+.rotulo-secao::before{content:"";width:28px;height:1.5px;background:currentColor}
+.intro{max-width:46rem}
+.intro>p{margin-top:20px;color:var(--suave);max-width:38rem;font-size:1.1rem}
+:focus-visible{outline:2px solid var(--laranja);outline-offset:3px;border-radius:6px}
+.icone{width:1.15em;height:1.15em;flex:none}
+
+.btn{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 28px;border-radius:999px;background:var(--laranja);color:#fff;font-weight:600;font-size:1rem;text-decoration:none;white-space:nowrap;overflow:hidden;isolation:isolate;transition:transform .25s var(--mola), box-shadow .25s ease}
+.btn::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(110deg, transparent 30%, rgba(255,255,255,.35) 50%, transparent 70%);transform:translateX(-120%);transition:transform .7s ease}
+.btn:hover{transform:translateY(-2px);box-shadow:0 12px 28px -10px rgba(224,120,42,.7)}
+.btn:hover::before{transform:translateX(120%)}
+.btn:active{transform:scale(.98)}
+.link-seta{display:inline-flex;align-items:center;gap:10px;font-weight:600;text-decoration:none;color:#fff;padding:6px 0;border-bottom:1.5px solid rgba(255,255,255,.35);transition:border-color .2s ease, gap .2s ease}
+.link-seta:hover{border-color:var(--laranja-claro);gap:14px}
+
+/* Barra de progresso */
+.progresso{position:fixed;top:0;left:0;right:0;height:3px;z-index:70;background:linear-gradient(90deg, var(--laranja), var(--laranja-claro));transform-origin:left;transform:scaleX(0)}
+
+/* Topo */
+.topo{position:fixed;top:0;left:0;right:0;z-index:50;transition:background .3s ease, box-shadow .3s ease}
+.topo .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:84px;transition:min-height .3s ease}
+.topo.rolou{background:rgba(246,242,235,.92);backdrop-filter:blur(14px) saturate(1.2);-webkit-backdrop-filter:blur(14px) saturate(1.2);box-shadow:0 1px 0 var(--linha)}
+.topo.rolou .wrap{min-height:70px}
+.marca{display:block;width:184px;flex:none;text-decoration:none}
+.marca img{width:100%}
+.marca .azul{display:none}
+.topo.rolou .marca .branca{display:none}
+.topo.rolou .marca .azul{display:block}
+.nav{display:flex;align-items:center;gap:30px}
+.nav ul{display:flex;gap:26px;list-style:none;margin:0;padding:0}
+.nav ul a{text-decoration:none;font-size:.95rem;color:#E4E5F0;position:relative;padding:6px 0;white-space:nowrap}
+.topo.rolou .nav ul a{color:var(--texto)}
+.nav ul a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;border-radius:2px;background:var(--laranja);transform:scaleX(0);transform-origin:left;transition:transform .25s ease}
+.nav ul a:hover::after,.nav ul a.ativo::after{transform:scaleX(1)}
+.nav .btn{min-height:46px;padding:0 22px;font-size:.95rem}
+.menu-botao,.menu-movel{display:none}
+
+/* Abertura */
+.abertura{position:relative;min-height:100svh;display:flex;align-items:center;overflow:hidden;color:#D9DAEA;background:
+  radial-gradient(60% 70% at 85% 30%, rgba(44,48,98,.95) 0%, rgba(44,48,98,0) 70%),
+  radial-gradient(45% 55% at 8% 100%, rgba(224,120,42,.22) 0%, rgba(224,120,42,0) 70%),
+  linear-gradient(160deg, var(--noite) 0%, var(--marinho) 60%, #1B1D3D 100%);padding:120px 0 120px}
+.abertura .fios{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.abertura .fios path{fill:none;stroke:var(--laranja);stroke-width:1.6;stroke-linecap:round;opacity:.75}
+.abertura .wrap{position:relative;z-index:2;width:100%;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(32px, 5vw, 72px);align-items:center}
+.etiqueta{display:inline-flex;align-items:center;gap:10px;padding:8px 16px 8px 10px;border-radius:999px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);font-size:.9rem;color:#E4E5F0;margin-bottom:28px}
+.etiqueta i{width:8px;height:8px;border-radius:50%;background:var(--folha-clara);box-shadow:0 0 0 4px rgba(169,196,106,.22)}
+.abertura h1{font-size:clamp(2.9rem, 6.4vw, 5.6rem);line-height:.98;color:#fff;letter-spacing:-.025em}
+.abertura h1 .linha{display:block;overflow:hidden;padding-bottom:.08em}
+.abertura h1 .linha>span{display:block}
+.abertura h1 em{color:var(--laranja-claro);font-weight:400}
+.abertura .sub{margin-top:28px;max-width:31rem;font-size:1.15rem;color:#C5C7DD}
+.abertura .acoes{display:flex;flex-wrap:wrap;align-items:center;gap:18px 34px;margin-top:38px}
+.provas{display:flex;gap:28px;list-style:none;margin:0;padding:0}
+.provas li{display:flex;flex-direction:column;line-height:1.3}
+.provas strong{font-family:var(--display);font-weight:400;font-size:1.6rem;color:#fff;font-variant-numeric:lining-nums}
+.provas strong small{font-size:.6em;color:var(--laranja-claro);margin-left:4px}
+.provas span{font-size:.85rem;color:#9FA1BF}
+.slogan{margin-top:40px;width:min(100%, 330px);opacity:.6}
+
+.retrato-abertura{position:relative;justify-self:center;width:min(100%, 440px)}
+.retrato-abertura .arco{position:relative;aspect-ratio:3/4;border-radius:50% 50% 36px 36px / 37.5% 37.5% 36px 36px;overflow:hidden;box-shadow:0 40px 80px -30px rgba(0,0,0,.6);background:var(--marinho-medio)}
+.retrato-abertura .arco img{width:100%;height:100%;object-fit:cover;object-position:56% 18%}
+.retrato-abertura .arco::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg, rgba(20,22,47,.55) 0%, rgba(20,22,47,0) 38%)}
+.retrato-abertura .orbita{position:absolute;inset:-7% -9%;pointer-events:none}
+.retrato-abertura .orbita ellipse{fill:none;stroke:var(--laranja);stroke-width:1.2;opacity:.8}
+.retrato-abertura .borboleta{position:absolute;top:-34px;right:-26px;width:120px;opacity:.9}
+.vidro{position:absolute;display:flex;align-items:center;gap:12px;padding:14px 18px;border-radius:18px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);color:#fff;box-shadow:0 20px 40px -20px rgba(0,0,0,.5);line-height:1.3}
+.vidro strong{font-family:var(--display);font-weight:400;font-size:1.7rem;font-variant-numeric:lining-nums}
+.vidro span{font-size:.82rem;color:#D4D5E6}
+.vidro .estrelas{display:block;color:var(--laranja-claro);letter-spacing:.12em;font-size:.8rem}
+.vidro.nota{left:-12%;bottom:16%}
+.vidro.prog{right:-10%;top:22%;flex-direction:column;align-items:flex-start;gap:2px;max-width:200px}
+.vidro.prog small{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--folha-clara);font-weight:600}
+.vidro.prog b{font-family:var(--display);font-weight:400;font-size:1.15rem;line-height:1.2}
+.descer{position:absolute;left:50%;bottom:28px;z-index:2;transform:translateX(-50%);width:26px;height:42px;border-radius:20px;border:1.5px solid rgba(255,255,255,.35)}
+.descer::after{content:"";position:absolute;left:50%;top:8px;width:4px;height:8px;margin-left:-2px;border-radius:2px;background:var(--laranja-claro);animation:rolar 1.8s ease-in-out infinite}
+@keyframes rolar{0%{opacity:0;transform:translateY(0)}30%{opacity:1}100%{opacity:0;transform:translateY(14px)}}
+
+/* Animações de entrada da abertura */
+.js .abertura .linha>span{animation:subir-linha 1s var(--mola) both}
+.js .abertura .linha:nth-child(2)>span{animation-delay:.12s}
+.js .abertura .linha:nth-child(3)>span{animation-delay:.24s}
+.js .abertura .etiqueta,.js .abertura .sub,.js .abertura .acoes,.js .abertura .slogan{animation:surgir .9s var(--mola) both}
+.js .abertura .etiqueta{animation-delay:.05s}
+.js .abertura .sub{animation-delay:.45s}
+.js .abertura .acoes{animation-delay:.6s}
+.js .abertura .slogan{animation-delay:.75s}
+.js .retrato-abertura .arco{animation:abrir-arco 1.4s var(--mola) .1s both}
+.js .retrato-abertura .vidro.nota{animation:surgir .9s var(--mola) .9s both}
+.js .retrato-abertura .vidro.prog{animation:surgir .9s var(--mola) 1.1s both}
+.js .retrato-abertura .borboleta{animation:pousar 1.4s var(--mola) .7s both}
+.js .retrato-abertura .orbita ellipse{stroke-dasharray:1;stroke-dashoffset:1;animation:desenhar 2.2s ease .3s forwards}
+.js .abertura .fios path{stroke-dasharray:1;stroke-dashoffset:1;animation:desenhar 3s ease .2s forwards}
+.retrato-abertura .orbita{animation:girar 40s linear infinite}
+.retrato-abertura .flutua{animation:flutuar 7s ease-in-out infinite}
+@keyframes subir-linha{from{transform:translateY(105%)}to{transform:none}}
+@keyframes surgir{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@keyframes abrir-arco{from{clip-path:inset(100% 0 0 0);transform:scale(1.04)}to{clip-path:inset(0);transform:none}}
+@keyframes pousar{from{opacity:0;transform:translate(-30px,30px) rotate(-18deg) scale(.7)}to{opacity:.9;transform:none}}
+@keyframes desenhar{to{stroke-dashoffset:0}}
+@keyframes girar{to{transform:rotate(360deg)}}
+@keyframes flutuar{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+
+/* Faixa de temas */
+.faixa{position:relative;z-index:3;margin-top:-34px;overflow:hidden;padding:18px 0}
+.faixa .trilho{transform:rotate(-2deg);background:var(--laranja);padding:16px 0;box-shadow:0 18px 40px -20px rgba(224,120,42,.8)}
+.faixa .corre{display:flex;width:max-content;animation:correr 38s linear infinite}
+.faixa ul{display:flex;align-items:center;gap:0;list-style:none;margin:0;padding:0}
+.faixa li{display:flex;align-items:center;gap:28px;padding-right:28px;font-family:var(--display);font-size:clamp(1.15rem, 2vw, 1.5rem);color:#fff;white-space:nowrap}
+.faixa li::after{content:"";width:9px;height:9px;border-radius:50% 0 50% 0;background:var(--noite);opacity:.55}
+@keyframes correr{to{transform:translateX(-50%)}}
+
+/* Virada de chave */
+.virada{position:relative;isolation:isolate;overflow:hidden;margin-top:-20px}
+.virada .noite{position:absolute;inset:0;z-index:-1;background:
+  radial-gradient(50% 60% at 90% 10%, rgba(224,120,42,.16), transparent 70%),
+  var(--marinho);clip-path:circle(0 at var(--cx, 80%) var(--cy, 20%));transition:clip-path .9s cubic-bezier(.7,0,.2,1)}
+.virada.nova .noite{clip-path:circle(150% at var(--cx, 80%) var(--cy, 20%))}
+.virada .topo-virada{display:flex;justify-content:space-between;align-items:end;gap:36px;flex-wrap:wrap}
+.virada h2{transition:color .6s ease;max-width:17ch}
+.virada.nova h2{color:#fff}
+.virada .intro>p,.virada .rotulo-secao{transition:color .6s ease}
+.virada.nova .intro>p{color:#B9BBD3}
+.chave{display:flex;align-items:center;gap:16px;font-weight:600;font-size:.98rem;color:var(--texto);transition:color .6s ease;user-select:none}
+.chave span{cursor:pointer}
+.virada.nova .chave{color:#E4E5F0}
+.chave .rot-nova{opacity:.45;transition:opacity .3s ease}
+.chave .rot-antes{transition:opacity .3s ease}
+.virada.nova .chave .rot-antes{opacity:.45}
+.virada.nova .chave .rot-nova{opacity:1}
+.interruptor{all:unset;position:relative;width:104px;height:52px;border-radius:999px;background:#fff;cursor:pointer;box-shadow:inset 0 0 0 1px var(--linha), 0 10px 24px -14px rgba(32,35,74,.5);transition:background .5s ease}
+.interruptor::after{content:"";position:absolute;inset:-6px;border-radius:999px;border:1.5px solid var(--laranja);opacity:0;animation:chamar 2.4s ease-out infinite}
+.virada.tocou .interruptor::after{animation:none}
+@keyframes chamar{0%{opacity:.8;transform:scale(.92)}100%{opacity:0;transform:scale(1.18)}}
+.virada.nova .interruptor{background:rgba(255,255,255,.12);box-shadow:inset 0 0 0 1px rgba(255,255,255,.22)}
+.interruptor:focus-visible{outline:2px solid var(--laranja);outline-offset:6px}
+.interruptor .gota{position:absolute;inset:0;filter:url(#goo)}
+.interruptor .gota i{position:absolute;top:7px;left:7px;width:38px;height:38px;border-radius:50%;background:var(--marinho);transition:transform .55s cubic-bezier(.65,0,.25,1.4), background .5s ease}
+.interruptor .gota i:nth-child(2){transition-delay:.08s;transform:scale(.7)}
+.virada.nova .interruptor .gota i{transform:translateX(52px);background:var(--laranja)}
+.virada.nova .interruptor .gota i:nth-child(2){transform:translateX(52px) scale(.7)}
+.comparacoes{list-style:none;margin:60px 0 0;padding:0;display:grid;gap:14px;counter-reset:comp}
+.comparacao{position:relative;display:grid;grid-template-columns:64px minmax(0,1fr) minmax(0,1.5fr);gap:24px;align-items:center;padding:26px 30px;border-radius:22px;background:#fff;border:1px solid var(--linha);transition:background .6s ease, border-color .6s ease, transform .35s var(--mola)}
+.comparacao:hover{transform:translateX(6px)}
+.comparacao::before{counter-increment:comp;content:"0" counter(comp);font-family:var(--display);font-size:1.6rem;color:var(--laranja);opacity:.85;font-variant-numeric:lining-nums}
+.virada.nova .comparacao{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.12)}
+.comparacao .tema{font-family:var(--display);font-size:1.25rem;line-height:1.3;color:var(--tinta);transition:color .6s ease}
+.virada.nova .comparacao .tema{color:#fff}
+.comparacao .resposta{display:grid;align-items:center}
+.comparacao .resposta p{grid-area:1/1;transition:opacity .45s ease, transform .45s ease}
+.comparacao .antes{color:var(--suave);text-decoration:line-through;text-decoration-color:rgba(224,120,42,.65);text-decoration-thickness:2px}
+.comparacao .depois{opacity:0;transform:translateY(12px);color:#E4E5F0}
+.comparacao .depois b{color:var(--laranja-claro);font-weight:600}
+.virada.nova .comparacao .antes{opacity:0;transform:translateY(-12px)}
+.virada.nova .comparacao .depois{opacity:1;transform:none}
+.virada.nova .comparacao:nth-child(2) p{transition-delay:.07s}
+.virada.nova .comparacao:nth-child(3) p{transition-delay:.14s}
+.virada.nova .comparacao:nth-child(4) p{transition-delay:.21s}
+.virada.nova .comparacao:nth-child(5) p{transition-delay:.28s}
+.fonte-posts{margin-top:28px;font-size:.88rem;color:var(--suave);transition:color .6s ease}
+.virada.nova .fonte-posts{color:#9C9EBB}
+
+/* Programas: cartões que empilham */
+.programas{background:var(--papel-2)}
+.programas .cabeca-prog{display:flex;justify-content:space-between;align-items:end;gap:32px;flex-wrap:wrap}
+.citacao-prog{max-width:26rem;font-family:var(--display);font-style:italic;font-size:1.2rem;line-height:1.45;color:var(--marinho);padding-left:20px;border-left:2px solid var(--laranja)}
+.pilha{list-style:none;margin:64px 0 0;padding:0;display:grid;gap:28px}
+.cartao-prog{position:sticky;top:calc(104px + var(--i) * 22px);scroll-margin-top:110px}
+.cartao-prog .corpo-prog{position:relative;overflow:hidden;display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(24px, 4vw, 64px);padding:clamp(30px, 4vw, 52px);border-radius:32px;min-height:340px;box-shadow:0 -10px 40px -24px rgba(20,22,47,.45);transform-origin:top center;transition:transform .2s linear, filter .2s linear}
+.cartao-prog .num{font-family:var(--display);font-size:clamp(3.5rem, 7vw, 6rem);line-height:.9;opacity:.9;font-variant-numeric:lining-nums}
+.cartao-prog .tipo{display:block;margin-top:22px;font-size:.82rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase}
+.cartao-prog h3{margin-top:10px;font-size:clamp(1.9rem, 3.2vw, 2.7rem);line-height:1.05}
+.cartao-prog p{font-size:1.08rem}
+.cartao-prog ul{margin:22px 0 0;padding:0;list-style:none;display:grid;gap:12px}
+.cartao-prog li{position:relative;padding-left:26px}
+.cartao-prog li::before{content:"";position:absolute;left:0;top:.55em;width:11px;height:11px;border-radius:50% 0 50% 0;background:currentColor;opacity:.7}
+.cartao-prog .marca-agua{position:absolute;right:-50px;bottom:-40px;width:300px;opacity:.07;pointer-events:none}
+.cartao-prog .link-caso{display:inline-flex;margin-top:20px;font-weight:600;text-underline-offset:4px}
+.p1 .corpo-prog{background:var(--marinho);color:#CFD1E4}
+.p1 h3{color:#fff}.p1 .num,.p1 .tipo{color:var(--laranja-claro)}.p1 li::before{background:var(--laranja)}
+.p2 .corpo-prog{background:#fff;color:var(--texto)}
+.p2 .num,.p2 .tipo{color:var(--laranja)}.p2 li::before{background:var(--laranja)}
+.p3 .corpo-prog{background:var(--musgo);color:#D9E2C6}
+.p3 h3{color:#fff}.p3 .num,.p3 .tipo{color:var(--folha-clara)}.p3 .link-caso{color:#fff}
+.p4 .corpo-prog{background:linear-gradient(135deg, #F7C595 0%, var(--laranja-claro) 100%);color:#3A2A1E}
+.p4 h3{color:var(--tinta)}.p4 .num,.p4 .tipo{color:#8A3F0B}
+
+/* Como funciona */
+.jornada{position:relative}
+.trilha-passos{position:relative;margin-top:72px}
+.trilha-passos .linha-base,.trilha-passos .linha-viva{position:absolute;top:27px;left:28px;right:28px;height:2px;border-radius:2px}
+.trilha-passos .linha-base{background:repeating-linear-gradient(90deg, rgba(32,35,74,.25) 0 6px, transparent 6px 12px)}
+.trilha-passos .linha-viva{background:linear-gradient(90deg, var(--laranja), var(--laranja-claro));transform-origin:left;transform:scaleX(var(--p, 0))}
+.passos{position:relative;list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5, minmax(0,1fr));gap:22px}
+.passo .bola{display:grid;place-items:center;width:56px;height:56px;border-radius:50%;background:var(--papel);border:1.5px solid var(--linha);font-family:var(--display);font-size:1.3rem;color:var(--marinho);transition:background .4s ease, color .4s ease, border-color .4s ease, transform .4s var(--mola)}
+.passo.aceso .bola{background:var(--marinho);border-color:var(--marinho);color:#fff;transform:scale(1.06)}
+.passo h3{margin-top:22px;font-size:1.22rem;margin-bottom:8px}
+.passo p{font-size:.96rem;color:var(--suave)}
+.app-nota{margin-top:56px;display:flex;gap:18px;align-items:center;padding:22px 26px;border-radius:20px;background:#fff;border:1px solid var(--linha);max-width:48rem}
+.app-nota svg{width:36px;height:36px;color:var(--folha);flex:none}
+
+/* Resultado real */
+.caso{background:var(--noite);color:#C9CBDF;position:relative;overflow:hidden}
+.caso::before{content:"";position:absolute;width:700px;height:700px;right:-250px;top:-250px;border-radius:50%;background:radial-gradient(closest-side, rgba(110,143,56,.22), transparent)}
+.caso .wrap{position:relative;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(40px, 6vw, 96px);align-items:center}
+.caso h2{color:#fff}
+.caso .rotulo-secao{color:var(--folha-clara)}
+.caso .texto p{margin-top:18px}
+.caso blockquote{margin:30px 0 0;padding:24px 28px;border-radius:22px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);font-family:var(--display);font-style:italic;font-size:1.3rem;line-height:1.45;color:#fff}
+.caso .nota{font-size:.88rem;color:#8E90AE}
+.painel{position:relative;padding:34px;border-radius:30px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1)}
+.anel{display:flex;align-items:center;gap:22px;padding-bottom:28px;margin-bottom:28px;border-bottom:1px solid rgba(255,255,255,.1)}
+.anel svg{width:120px;height:120px;flex:none;transform:rotate(-90deg)}
+.anel circle{fill:none;stroke-width:8}
+.anel .fundo{stroke:rgba(255,255,255,.1)}
+.anel .cheio{stroke:var(--folha-clara);stroke-linecap:round;stroke-dasharray:327;stroke-dashoffset:327;transition:stroke-dashoffset 2s var(--mola)}
+.painel.visivel .anel .cheio{stroke-dashoffset:0}
+.anel strong{display:block;font-family:var(--display);font-weight:400;font-size:2.6rem;line-height:1;color:#fff;font-variant-numeric:lining-nums}
+.anel span{font-size:.95rem;color:#A9ABC6}
+.numeros{display:grid;grid-template-columns:repeat(2, minmax(0,1fr));gap:26px 20px}
+.numero strong{display:block;font-family:var(--display);font-weight:400;font-size:2.5rem;line-height:1;color:var(--laranja-claro);font-variant-numeric:lining-nums}
+.numero>span{display:block;margin-top:6px;color:#A9ABC6;font-size:.95rem}
+.numero.ok strong{color:#fff;font-size:1.9rem;display:flex;align-items:center;gap:10px}
+.numero.ok strong::before{content:"";width:22px;height:22px;flex:none;border-radius:50%;background:var(--folha-clara) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2314162F' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7.5'/%3E%3C/svg%3E") center/14px no-repeat}
+
+/* Planos */
+.planos .intro{margin:0 auto;text-align:center}
+.planos .intro>p{margin-left:auto;margin-right:auto}
+.planos .rotulo-secao{justify-content:center}
+.planos-grade{display:grid;grid-template-columns:repeat(3, minmax(0,1fr));gap:22px;margin-top:64px;align-items:stretch}
+.plano{position:relative;display:flex;flex-direction:column;gap:14px;padding:36px 32px;border-radius:28px;background:#fff;border:1px solid var(--linha);scroll-margin-top:110px;transition:transform .35s var(--mola), box-shadow .35s ease}
+.plano:hover{transform:translateY(-6px);box-shadow:0 30px 50px -30px rgba(32,35,74,.45)}
+.plano .duracao{display:flex;align-items:baseline;gap:8px;font-family:var(--display);color:var(--laranja)}
+.plano .duracao b{font-weight:400;font-size:3.2rem;line-height:1;font-variant-numeric:lining-nums}
+.plano .duracao span{font-size:1.1rem}
+.plano h3{font-size:1.6rem}
+.plano p{color:var(--suave)}
+.plano .trilha{display:flex;gap:6px;margin-top:auto;padding-top:22px}
+.plano .trilha i{flex:1;height:6px;border-radius:3px;background:var(--papel-2);position:relative;overflow:hidden}
+.plano .trilha i.on::after{content:"";position:absolute;inset:0;background:var(--folha);transform:scaleX(0);transform-origin:left;transition:transform .5s ease}
+.plano.visivel .trilha i.on::after{transform:none}
+.plano .trilha i:nth-child(2)::after{transition-delay:.1s}.plano .trilha i:nth-child(3)::after{transition-delay:.2s}.plano .trilha i:nth-child(4)::after{transition-delay:.3s}.plano .trilha i:nth-child(5)::after{transition-delay:.4s}.plano .trilha i:nth-child(6)::after{transition-delay:.5s}
+.plano .legenda{font-size:.82rem;color:var(--suave)}
+.plano.destaque{background:var(--marinho);border-color:transparent;color:#C9CBDF;transform:translateY(-14px)}
+.plano.destaque:hover{transform:translateY(-20px)}
+.plano.destaque h3{color:#fff}
+.plano.destaque p,.plano.destaque .legenda{color:#B9BBD3}
+.plano.destaque .duracao{color:var(--laranja-claro)}
+.plano.destaque .trilha i{background:rgba(255,255,255,.12)}
+.plano.destaque .trilha i.on::after{background:var(--laranja)}
+.plano .selo{position:absolute;top:-14px;right:28px;padding:6px 14px;border-radius:999px;background:var(--laranja);color:#fff;font-size:.8rem;font-weight:600}
+@property --giro{syntax:"<angle>";initial-value:0deg;inherits:false}
+.plano.destaque::after{content:"";position:absolute;inset:-2px;border-radius:30px;padding:2px;background:conic-gradient(from var(--giro), transparent 0 62%, var(--laranja) 80%, var(--folha-clara) 92%, transparent 100%);-webkit-mask:linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;animation:borda 7s linear infinite;pointer-events:none}
+@keyframes borda{to{--giro:360deg}}
+
+/* Avaliações */
+.avaliacoes{background:var(--papel-2);overflow:hidden}
+.avaliacoes .cabeca{display:flex;justify-content:space-between;align-items:end;gap:28px;flex-wrap:wrap}
+.nota-google{display:flex;align-items:center;gap:18px;padding:18px 24px;border-radius:22px;background:#fff;border:1px solid var(--linha)}
+.nota-google strong{font-family:var(--display);font-weight:400;font-size:3.6rem;line-height:1;color:var(--marinho);font-variant-numeric:lining-nums}
+.nota-google span{font-size:.92rem;line-height:1.5;color:var(--suave)}
+.estrelas-cheias{position:relative;display:inline-block;color:rgba(224,120,42,.22);letter-spacing:.12em;font-size:1.05rem}
+.estrelas-cheias::after{content:"★★★★★";position:absolute;left:0;top:0;color:var(--laranja);width:0;overflow:hidden;white-space:nowrap;transition:width 1.4s var(--mola) .3s}
+.visivel .estrelas-cheias::after{width:100%}
+.esteiras{margin-top:60px;display:grid;gap:20px;-webkit-mask:linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);mask:linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent)}
+.esteira{display:flex;width:max-content;gap:20px;animation:correr 60s linear infinite}
+.esteira.volta{animation-direction:reverse;animation-duration:70s}
+.esteiras:hover .esteira{animation-play-state:paused}
+.depo{flex:none;width:min(420px, 80vw);margin:0;padding:30px;border-radius:24px;background:#fff;border:1px solid var(--linha);display:flex;flex-direction:column;justify-content:space-between;gap:18px}
+.depo p{font-family:var(--display);font-size:1.12rem;line-height:1.5;color:var(--tinta)}
+.depo footer{display:flex;align-items:center;gap:10px;font-size:.88rem;color:var(--suave)}
+.depo footer i{font-style:normal;color:var(--laranja);letter-spacing:.1em}
+.depo.escuro{background:var(--marinho);border-color:transparent}
+.depo.escuro p{color:#fff}
+.depo.escuro footer{color:#A9ABC6}
+.fonte{margin-top:26px;font-size:.88rem;color:var(--suave)}
+
+/* Sobre */
+.sobre{overflow:hidden}
+.sobre .grade{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(44px, 7vw, 110px);align-items:center}
+.colagem{position:relative;max-width:460px;width:100%;justify-self:center}
+.colagem .principal{position:relative;border-radius:50% 50% 30px 30px / 38.5% 38.5% 30px 30px;overflow:hidden;aspect-ratio:4/5.2;background:var(--marinho)}
+.colagem .principal img{width:100%;height:100%;object-fit:cover;object-position:50% 12%}
+.colagem .menor{position:absolute;left:-36px;bottom:40px;width:38%;border-radius:50%;overflow:hidden;border:6px solid var(--papel);box-shadow:0 20px 40px -20px rgba(20,22,47,.5)}
+.colagem .menor img{width:100%;aspect-ratio:1;object-fit:cover;object-position:50% 18%}
+.colagem .fio{position:absolute;inset:-8% -14% -6% -10%;width:auto;height:auto;pointer-events:none;z-index:-1}
+.colagem .fio path{fill:none;stroke:var(--laranja);stroke-width:1.6;stroke-linecap:round}
+.colagem .selo-40{position:absolute;right:-18px;top:18%;display:grid;place-items:center;width:110px;height:110px;border-radius:50%;background:var(--laranja);color:#fff;text-align:center;font-family:var(--display);line-height:1.05;box-shadow:0 20px 40px -18px rgba(224,120,42,.8)}
+.colagem .selo-40 b{display:block;font-weight:400;font-size:2.2rem}
+.colagem .selo-40 span{font-size:.82rem}
+.sobre h2{font-size:clamp(2rem, 4vw, 3.2rem)}
+.sobre .texto p{margin-top:18px}
+.destaque-frase{margin-top:30px !important;padding:26px 30px;border-radius:24px;background:var(--marinho);color:#fff;font-family:var(--display);font-style:italic;font-size:1.4rem;line-height:1.4;position:relative}
+.destaque-frase::before{content:"“";position:absolute;top:-18px;left:22px;font-size:4.4rem;line-height:1;color:var(--laranja);font-style:normal}
+.primavera{margin-top:26px !important;font-family:var(--display);font-size:1.18rem;color:var(--marinho)}
+.primavera em{color:var(--folha)}
+.crn{display:inline-block;margin-top:24px;font-size:.9rem;font-weight:600;color:var(--marinho);padding:8px 16px;border-radius:999px;border:1px solid var(--linha);background:#fff}
+
+/* Contato */
+.contato{background:var(--marinho);color:#D3D4E4;position:relative;overflow:hidden}
+.contato .marca-agua{position:absolute;left:-80px;top:-60px;width:460px;opacity:.06;pointer-events:none}
+.contato .wrap{position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(40px, 6vw, 88px);align-items:center}
+.contato h2{color:#fff;font-size:clamp(2.3rem, 4.8vw, 3.8rem)}
+.contato h2 em{color:var(--laranja-claro)}
+.contato .txt{margin-top:22px;color:#C2C4DA;max-width:31rem;font-size:1.1rem}
+.contato .btn{margin-top:34px}
+.convite{display:flex;align-items:center;gap:14px;margin-bottom:24px}
+.convite img{width:58px;height:58px;border-radius:50%;object-fit:cover;border:2px solid rgba(255,255,255,.3)}
+.convite span{font-size:.95rem;color:#C2C4DA;line-height:1.4}
+.convite .online{display:inline-flex;align-items:center;gap:6px;color:var(--folha-clara);font-weight:600}
+.convite .online::before{content:"";width:8px;height:8px;border-radius:50%;background:currentColor;box-shadow:0 0 0 0 rgba(169,196,106,.6);animation:pulsar 2s infinite}
+@keyframes pulsar{70%{box-shadow:0 0 0 8px rgba(169,196,106,0)}100%{box-shadow:0 0 0 0 rgba(169,196,106,0)}}
+.mapa-cartao{border-radius:28px;overflow:hidden;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12)}
+.mapa{position:relative;aspect-ratio:16/9;background:var(--marinho-medio)}
+.mapa iframe{position:absolute;inset:0;width:100%;height:100%;border:0;filter:grayscale(.35) contrast(1.05)}
+.info{display:grid;grid-template-columns:repeat(2, minmax(0,1fr));gap:22px;padding:28px}
+.info strong{display:block;font-family:var(--display);font-weight:400;font-size:1.12rem;color:var(--laranja-claro);margin-bottom:4px}
+.info p{color:#D3D4E4;font-size:.96rem}
+.info a{color:#fff;text-underline-offset:4px}
+.info .largo{grid-column:1 / -1}
+
+.rodape{background:var(--noite);color:#A9ABC6;padding:60px 0 36px;font-size:.92rem}
+.rodape .grade{display:grid;grid-template-columns:minmax(0,1.3fr) repeat(3, minmax(0,1fr));gap:32px}
+.rodape .logo{width:200px}
+.rodape h4{margin:0 0 12px;font-family:var(--display);font-weight:400;font-size:1.05rem;color:#fff}
+.rodape ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.rodape a{text-decoration:none;color:#DADBEA}
+.rodape a:hover{text-decoration:underline;text-underline-offset:3px}
+.rodape .base{margin-top:44px;padding-top:22px;border-top:1px solid rgba(255,255,255,.1);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:.85rem;color:#8587A6}
+
+.barra-movel{display:none}
+.js .revela{opacity:0;transform:translateY(26px);transition:opacity .9s ease, transform .9s var(--mola);transition-delay:var(--atraso, 0s)}
+.js .revela.visivel{opacity:1;transform:none}
+.js .plano.revela.destaque{transform:translateY(12px)}
+.js .plano.revela.destaque.visivel{transform:translateY(-14px)}
+
+@media (max-width:1140px){
+  .nav ul{gap:20px}
+  .nav ul li.extra{display:none}
+  .vidro.nota{left:-6%}
+  .vidro.prog{right:-4%}
+}
+@media (max-width:1080px){
+  .passos{grid-template-columns:minmax(0,1fr);gap:28px}
+  .trilha-passos .linha-base,.trilha-passos .linha-viva{top:28px;bottom:28px;left:27px;right:auto;width:2px;height:auto}
+  .trilha-passos .linha-base{background:repeating-linear-gradient(180deg, rgba(32,35,74,.25) 0 6px, transparent 6px 12px)}
+  .trilha-passos .linha-viva{transform-origin:top;transform:scaleY(var(--p, 0))}
+  .passo{display:grid;grid-template-columns:56px minmax(0,1fr);column-gap:22px}
+  .passo .bola{grid-row:span 2}
+  .passo h3{margin-top:12px}
+}
+@media (max-width:980px){
+  .nav ul,.nav .btn{display:none}
+  .menu-botao{display:inline-flex;align-items:center;gap:10px;min-height:44px;padding:0 16px;border-radius:999px;border:1px solid rgba(255,255,255,.3);background:transparent;color:#fff;font:600 .95rem var(--corpo);cursor:pointer}
+  .topo.rolou .menu-botao,body.menu-aberto .menu-botao{color:var(--marinho);border-color:var(--linha)}
+  body.menu-aberto .topo{background:var(--papel)}
+  body.menu-aberto .marca .branca{display:none}
+  body.menu-aberto .marca .azul{display:block}
+  .menu-botao .barras{position:relative;width:16px;height:10px}
+  .menu-botao .barras::before,.menu-botao .barras::after{content:"";position:absolute;left:0;right:0;height:2px;border-radius:2px;background:currentColor;transition:transform .25s ease, top .25s ease}
+  .menu-botao .barras::before{top:0}
+  .menu-botao .barras::after{top:8px}
+  .menu-botao[aria-expanded="true"] .barras::before{top:4px;transform:rotate(45deg)}
+  .menu-botao[aria-expanded="true"] .barras::after{top:4px;transform:rotate(-45deg)}
+  .menu-movel{display:block;position:fixed;inset:0;top:var(--altura-topo,84px);z-index:45;background:var(--papel);padding:8px var(--gutter) calc(32px + env(safe-area-inset-bottom));overflow-y:auto;visibility:hidden;opacity:0;transform:translateY(-8px);transition:opacity .22s ease, transform .22s ease, visibility 0s .22s}
+  .menu-movel.aberto{visibility:visible;opacity:1;transform:none;transition:opacity .22s ease, transform .22s ease}
+  .menu-movel ul{list-style:none;margin:0;padding:0}
+  .menu-movel li a{display:flex;align-items:center;justify-content:space-between;min-height:62px;border-bottom:1px solid var(--linha);font-family:var(--display);font-size:1.6rem;text-decoration:none;color:var(--tinta)}
+  .menu-movel li a::after{content:"→";font-size:1.1rem;color:var(--laranja)}
+  .menu-movel .btn{width:100%;margin-top:30px}
+  .menu-movel .contato-rapido{margin-top:22px;color:var(--suave);font-size:.95rem;line-height:1.7}
+  body.menu-aberto{overflow:hidden}
+  body.menu-aberto .barra-movel{transform:translateY(110%)}
+
+  .abertura{padding:108px 0 96px;min-height:0}
+  .abertura .wrap{grid-template-columns:minmax(0,1fr);gap:56px}
+  .retrato-abertura{width:min(78%, 380px);order:-1}
+  .vidro.nota{left:-14%;bottom:10%}
+  .vidro.prog{right:-14%;top:12%}
+  .slogan{display:none}
+  .caso .wrap,.sobre .grade,.contato .wrap{grid-template-columns:minmax(0,1fr)}
+  .cartao-prog .corpo-prog{grid-template-columns:minmax(0,1fr);min-height:0}
+  .comparacao{grid-template-columns:minmax(0,1fr);gap:10px;padding:22px 24px}
+  .comparacao::before{font-size:1.2rem}
+  .planos-grade{grid-template-columns:minmax(0,1fr);gap:26px}
+  .plano.destaque,.js .plano.revela.destaque.visivel{transform:none}
+  .plano.destaque:hover{transform:translateY(-6px)}
+  .js .plano.revela.destaque{transform:translateY(26px)}
+  .colagem{max-width:380px;margin-bottom:12px}
+  .rodape .grade{grid-template-columns:repeat(2, minmax(0,1fr))}
+  .rodape .grade>div:first-child{grid-column:1 / -1}
+  .barra-movel{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:60;padding:12px 16px calc(12px + env(safe-area-inset-bottom));background:rgba(246,242,235,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-top:1px solid var(--linha);transition:transform .3s var(--mola)}
+  .barra-movel.oculta{transform:translateY(110%)}
+  .barra-movel .btn{width:100%}
+  .rodape{padding-bottom:116px}
+}
+@media (max-width:640px){
+  body{font-size:1rem}
+  .abertura h1{font-size:clamp(2.55rem, 11.5vw, 3.4rem)}
+  .abertura .acoes{flex-direction:column;align-items:flex-start;gap:22px}
+  .retrato-abertura{width:76%}
+  .vidro{padding:10px 13px;border-radius:14px}
+  .vidro strong{font-size:1.3rem}
+  .vidro.prog{max-width:150px;right:-18%}
+  .vidro.prog b{font-size:.98rem}
+  .vidro.nota{left:-18%}
+  .retrato-abertura .borboleta{width:84px;top:-22px;right:-12px}
+  .cartao-prog{position:relative;top:auto}
+  .cartao-prog .corpo-prog{border-radius:26px}
+  .numeros{gap:22px 14px}
+  .numero strong{font-size:2rem}
+  .numero.ok strong{font-size:1.5rem}
+  .anel svg{width:96px;height:96px}
+  .painel{padding:26px}
+  .info{grid-template-columns:minmax(0,1fr);padding:24px}
+  .colagem .menor{left:-10px}
+  .colagem .selo-40{right:-6px;width:92px;height:92px}
+  .colagem .selo-40 b{font-size:1.8rem}
+  .nota-google strong{font-size:2.8rem}
+  .destaque-frase{font-size:1.22rem;padding:24px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none !important;transition:none !important}
+  .js .revela{opacity:1;transform:none}
+  .js .abertura .fios path,.js .retrato-abertura .orbita ellipse{stroke-dashoffset:0}
+  .esteiras{-webkit-mask:none;mask:none}
+  .esteira{width:auto;flex-wrap:wrap;padding:0 var(--gutter)}
+  .esteira [aria-hidden="true"],.esteira.volta{display:none}
+  .esteira.calma{display:flex}
+  .faixa .corre{width:auto}
+  .faixa ul[aria-hidden="true"]{display:none}
+  .estrelas-cheias::after{width:100%}
+  .anel .cheio{stroke-dashoffset:0}
+  .plano .trilha i.on::after{transform:none}
+}
+</style>
+</head>
+<body>
+<script>document.documentElement.classList.add("js")</script>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <filter id="goo"><feGaussianBlur in="SourceGraphic" stdDeviation="5" result="b"/><feColorMatrix in="b" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 22 -9" result="g"/><feComposite in="SourceGraphic" in2="g" operator="atop"/></filter>
+  <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm0 18.15a8.2 8.2 0 0 1-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 4.54 0 8.24 3.7 8.24 8.24 0 4.55-3.7 8.24-8.24 8.24Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.15.16-.29.18-.54.06-.25-.13-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.39 1.01 2.56.12.16 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.16-.48-.29Z"/></symbol>
+  </defs>
+</svg>
+
+<div class="progresso" aria-hidden="true"></div>
+
+<header class="topo" id="topo">
+  <div class="wrap">
+    <a class="marca" href="#inicio" aria-label="Dra. Carolina Mendes, nutricionista, início"><img class="branca" src="img/marca-branco.png?v=1" alt="" width="878" height="250"><img class="azul" src="img/marca-azul.png?v=1" alt="" width="878" height="250"></a>
+    <nav class="nav" aria-label="Principal">
+      <ul>
+        <li><a href="#estrategia">A virada</a></li>
+        <li><a href="#programas">Programas</a></li>
+        <li class="extra"><a href="#como-funciona">Como funciona</a></li>
+        <li><a href="#resultado">Resultado real</a></li>
+        <li><a href="#avaliacoes">Avaliações</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+      </ul>
+      <a class="btn" data-wa="Olá, Nutri! Vim pelo site e gostaria de agendar uma consulta." href="https://wa.me/5511911254148"><svg class="icone" aria-hidden="true"><use href="#i-wa"/></svg>Agendar consulta</a>
+    </nav>
+    <button class="menu-botao" type="button" aria-expanded="false" aria-controls="menu-movel"><span class="barras" aria-hidden="true"></span><span class="rotulo">Menu</span></button>
+  </div>
+</header>
+
+<div class="menu-movel" id="menu-movel">
+  <ul>
+    <li><a href="#estrategia">A virada de chave</a></li>
+    <li><a href="#programas">Programas</a></li>
+    <li><a href="#como-funciona">Como funciona</a></li>
+    <li><a href="#resultado">Resultado real</a></li>
+    <li><a href="#planos">Planos</a></li>
+    <li><a href="#avaliacoes">Avaliações</a></li>
+    <li><a href="#sobre">Sobre a Carol</a></li>
+    <li><a href="#contato">Localização</a></li>
+  </ul>
+  <a class="btn" data-wa="Olá, Nutri! Vim pelo site e gostaria de agendar uma consulta." href="https://wa.me/5511911254148"><svg class="icone" aria-hidden="true"><use href="#i-wa"/></svg>Agendar consulta</a>
+  <p class="contato-rapido">WhatsApp <a data-wa="Olá, Nutri! Vim pelo site e tenho uma dúvida." href="https://wa.me/5511911254148">(11) 91125-4148</a><br>Av. Dom Pedro II, 131, Centro, Salto, SP<br>Instagram <a href="https://www.instagram.com/nutricionistacarolinamendes/" target="_blank" rel="noopener">@nutricionistacarolinamendes</a></p>
+</div>
+
+<main id="inicio">
+
+<section class="abertura" aria-labelledby="titulo">
+  <svg class="fios" viewBox="0 0 1440 900" preserveAspectRatio="none" aria-hidden="true">
+    <path pathLength="1" d="M-40 140 C 220 60, 380 260, 600 170 S 980 -20, 1180 90"/>
+    <path pathLength="1" d="M760 960 C 900 760, 1180 820, 1300 660 S 1500 520, 1480 380"/>
+  </svg>
+  <div class="wrap">
+    <div class="texto-abertura">
+      <p class="etiqueta"><i aria-hidden="true"></i>Nutricionista da mulher no climatério e na menopausa</p>
+      <h1 id="titulo"><span class="linha"><span>Seu corpo mudou.</span></span><span class="linha"><span>Sua estratégia</span></span><span class="linha"><span><em>também precisa.</em></span></span></h1>
+      <p class="sub">Ajudo mulheres na menopausa a saírem do ciclo de tentativa, frustração e abandono. Atendimento on-line e presencial em Salto, SP.</p>
+      <div class="acoes">
+        <a class="link-seta" href="#estrategia">Vire a chave <span aria-hidden="true">↓</span></a>
+        <ul class="provas">
+          <li><strong>5,0<small>★</small></strong><span>42 avaliações no Google</span></li>
+          <li><strong>On-line</strong><span>e presencial em Salto</span></li>
+        </ul>
+      </div>
+      <img class="slogan" src="img/slogan-branco.png?v=1" alt="Transformando seu mundo com saúde e bem estar" width="906" height="72">
+    </div>
+    <div class="retrato-abertura" data-paralaxe>
+      <svg class="orbita" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><ellipse pathLength="1" cx="50" cy="50" rx="48" ry="46" vector-effect="non-scaling-stroke"/></svg>
+      <div class="arco"><img src="img/carol-hero.jpg?v=1" alt="Dra. Carolina Mendes de jaleco, segurando um adipômetro" width="485" height="728" fetchpriority="high"></div>
+      <img class="borboleta" src="img/marca-simbolo.png?v=1" alt="" width="365" height="219">
+      <div class="vidro nota flutua"><strong>5,0</strong><span><span class="estrelas" aria-hidden="true">★★★★★</span>42 avaliações<br>no Google</span></div>
+      <div class="vidro prog flutua" style="animation-delay:-3.5s"><small>Programa</small><b>Menopausa no Eixo</b></div>
+    </div>
+  </div>
+  <span class="descer" aria-hidden="true"></span>
+</section>
+
+<div class="faixa" aria-label="Temas do atendimento">
+  <div class="trilho">
+    <div class="corre">
+      <ul><li>Climatério</li><li>Menopausa</li><li>Recomposição corporal</li><li>Perfil comportamental</li><li>Sem terrorismo e sem soluções mágicas</li><li>Segunda Primavera</li></ul>
+      <ul aria-hidden="true"><li>Climatério</li><li>Menopausa</li><li>Recomposição corporal</li><li>Perfil comportamental</li><li>Sem terrorismo e sem soluções mágicas</li><li>Segunda Primavera</li></ul>
+    </div>
+  </div>
+</div>
+
+<section class="virada secao" id="estrategia" aria-labelledby="t-virada">
+  <div class="noite" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="topo-virada">
+      <div class="intro">
+        <span class="rotulo-secao">Virada de chave</span>
+        <h2 id="t-virada">“Fechei a boca, aumentei o treino… <em>e nada mudou.</em>”</h2>
+        <p>Depois dos 40, o que funcionava antes deixa de funcionar. Vire a chave e veja o que muda na estratégia.</p>
+      </div>
+      <div class="chave">
+        <span class="rot-antes">Estratégia antiga</span>
+        <button class="interruptor" type="button" role="switch" aria-checked="false" aria-label="Mostrar a nova estratégia"><span class="gota" aria-hidden="true"><i></i><i></i></span></button>
+        <span class="rot-nova">Nova estratégia</span>
+      </div>
+    </div>
+    <ol class="comparacoes">
+      <li class="comparacao revela"><span class="tema">Quando o peso aumenta</span><div class="resposta"><p class="antes">Comer cada vez menos e treinar cada vez mais.</p><p class="depois">Antes de reduzir calorias, entender como estão <b>seu sono, seus sintomas, sua rotina</b>, sua alimentação e sua relação com a comida.</p></div></li>
+      <li class="comparacao revela" style="--atraso:.06s"><span class="tema">Quando a barriga estufa no fim do dia</span><div class="resposta"><p class="antes">Almoçar só folhas cruas com um filé de frango.</p><p class="depois"><b>Digestibilidade e estratégia proteica:</b> vegetais cozidos ou grelhados, mastigar com calma e menos líquido junto da refeição.</p></div></li>
+      <li class="comparacao revela" style="--atraso:.12s"><span class="tema">Quando se usa a caneta emagrecedora</span><div class="resposta"><p class="antes">Deixar a medicação fazer tudo sozinha.</p><p class="depois"><b>Recomposição corporal:</b> aporte proteico e treino de força para perder gordura e proteger os músculos, sem efeito rebote.</p></div></li>
+      <li class="comparacao revela" style="--atraso:.18s"><span class="tema">Para emagrecer de verdade</span><div class="resposta"><p class="antes">Dieta perfeita e força de vontade.</p><p class="depois">Um <b>sistema que funcione na sua vida real:</b> constância, escolhas possíveis e um processo que te sustente quando a rotina aperta.</p></div></li>
+      <li class="comparacao revela" style="--atraso:.24s"><span class="tema">Quando o corpo dá sinais</span><div class="resposta"><p class="antes">Colocar toda queixa na conta da menopausa.</p><p class="depois"><b>Acolhimento e investigação séria</b> do que você sente, para cuidar de você de verdade.</p></div></li>
+    </ol>
+    <p class="fonte-posts">Orientações publicadas pela Carol no Instagram @nutricionistacarolinamendes.</p>
+  </div>
+</section>
+
+<section class="programas secao" id="programas" aria-labelledby="t-programas">
+  <div class="wrap">
+    <div class="cabeca-prog">
+      <div class="intro revela">
+        <span class="rotulo-secao">Programas de acompanhamento</span>
+        <h2 id="t-programas">Um processo, <em>não uma dieta.</em></h2>
+      </div>
+      <p class="citacao-prog revela" style="--atraso:.1s">“Eu não entrego dieta. Eu conduzo um processo que te leva para uma vida com mais saúde, disposição e bem-estar.”</p>
+    </div>
+    <ol class="pilha">
+      <li class="cartao-prog p1" id="menopausa-no-eixo" style="--i:0">
+        <div class="corpo-prog">
+          <img class="marca-agua" src="img/marca-simbolo.png?v=1" alt="" width="365" height="219" loading="lazy">
+          <div><span class="num">01</span><span class="tipo">Climatério e menopausa</span><h3>Programa Menopausa no Eixo</h3></div>
+          <div>
+            <p>Para a mulher que sente que o corpo mudou e já não se reconhece no espelho. O acompanhamento cuida da composição corporal, preserva os músculos e constrói uma rotina alimentar que faça sentido para a sua saúde, sem terrorismo e sem soluções mágicas.</p>
+            <ul>
+              <li>Olhar para sono, sintomas, rotina e relação com a comida</li>
+              <li>Composição corporal e preservação de massa muscular</li>
+              <li>Acolhimento e investigação séria das queixas</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="cartao-prog p2" id="virada-de-chave" style="--i:1">
+        <div class="corpo-prog">
+          <div><span class="num">02</span><span class="tipo">Recomposição corporal</span><h3>Programa Virada de Chave</h3></div>
+          <div>
+            <p>Perder gordura enquanto protege e constrói músculos, com estratégia proteica e treino de força, para sair do ciclo de tentativa, frustração e recomeço.</p>
+            <ul>
+              <li>Estratégia proteica</li>
+              <li>Treino de força para proteger os músculos</li>
+              <li>Perda de gordura sem efeito rebote</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="cartao-prog p3" id="programa-evolucao" style="--i:2">
+        <div class="corpo-prog">
+          <div><span class="num">03</span><span class="tipo">Perfil comportamental</span><h3>Programa Evolução</h3></div>
+          <div>
+            <p>Além do plano alimentar, um questionário de perfil comportamental para entender quem você é e usar seus pontos fortes como estratégia.</p>
+            <a class="link-caso" href="#resultado">Veja um resultado real →</a>
+          </div>
+        </div>
+      </li>
+      <li class="cartao-prog p4" id="e-books" style="--i:3">
+        <div class="corpo-prog">
+          <div><span class="num">04</span><span class="tipo">Materiais de apoio</span><h3>E-books e receitas</h3></div>
+          <div>
+            <p>E-books, receitas práticas para o dia a dia e ferramentas de mudança de comportamento, de acordo com o programa escolhido.</p>
+          </div>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="jornada secao" id="como-funciona" aria-labelledby="t-jornada">
+  <div class="wrap">
+    <div class="intro revela">
+      <span class="rotulo-secao">Como funciona</span>
+      <h2 id="t-jornada">O tratamento começa <em>assim que você agenda</em></h2>
+      <p>Um passo a passo para você conquistar seu objetivo e manter os resultados para o resto da vida.</p>
+    </div>
+    <div class="trilha-passos">
+      <span class="linha-base" aria-hidden="true"></span><span class="linha-viva" aria-hidden="true"></span>
+      <ol class="passos">
+        <li class="passo"><span class="bola" aria-hidden="true">1</span><h3>Você agenda</h3><p>E já recebe questionários para a Carol conhecer o seu caso antes da consulta.</p></li>
+        <li class="passo"><span class="bola" aria-hidden="true">2</span><h3>Primeira consulta</h3><p>Focada em soluções para as suas dificuldades, com um protocolo personalizado.</p></li>
+        <li class="passo"><span class="bola" aria-hidden="true">3</span><h3>Tudo no aplicativo</h3><p>Plano alimentar, orientações, suplementações e solicitações de exames na palma da mão.</p></li>
+        <li class="passo"><span class="bola" aria-hidden="true">4</span><h3>Materiais exclusivos</h3><p>E-books, receitas e ferramentas de mudança de comportamento ao longo do acompanhamento.</p></li>
+        <li class="passo"><span class="bola" aria-hidden="true">5</span><h3>Plano de ação</h3><p>Construído junto com você, passo a passo, para manter os resultados.</p></li>
+      </ol>
+    </div>
+    <p class="app-nota revela"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="3"/><path d="M10.5 18.5h3"/></svg><span>Sem papéis espalhados: tudo fica no aplicativo Numax, que você encontra na loja de aplicativos do seu celular.</span></p>
+  </div>
+</section>
+
+<section class="caso secao" id="resultado" aria-labelledby="t-caso">
+  <div class="wrap">
+    <div class="texto revela">
+      <span class="rotulo-secao">Resultado real · Programa Evolução</span>
+      <h2 id="t-caso">Ela não queria só emagrecer. <em>Ela queria se recuperar.</em></h2>
+      <p>Climatério, anemia, cansaço, uma vida inteira cuidando de todo mundo e ela mesma no fim da lista. Em 60 dias de acompanhamento, isso mudou.</p>
+      <p>Ela tirou o açúcar do café, o que achava que seria impossível. Reorganizou a geladeira, manteve os treinos e chegou aos 3 litros de água por dia.</p>
+      <blockquote>“Quando identificamos que ela era confiável, conciliadora e cuidadora, paramos de lutar contra quem ela é e começamos a usar esses pontos fortes como estratégia.”</blockquote>
+      <p class="nota">Caso publicado pela Carol no Instagram, sem identificar a paciente.</p>
+    </div>
+    <div class="painel revela" style="--atraso:.1s">
+      <div class="anel">
+        <svg viewBox="0 0 120 120" aria-hidden="true"><circle class="fundo" cx="60" cy="60" r="52"/><circle class="cheio" cx="60" cy="60" r="52"/></svg>
+        <div><strong class="contar" data-ate="60">60</strong><span>dias de acompanhamento</span></div>
+      </div>
+      <div class="numeros">
+        <div class="numero"><strong><span class="contar" data-ate="2" data-pre="−">−2</span> kg</strong><span>de gordura</span></div>
+        <div class="numero"><strong><span class="contar" data-ate="5" data-pre="−">−5</span> cm</strong><span>de abdômen</span></div>
+        <div class="numero ok"><strong>Mantida</strong><span>a massa magra</span></div>
+        <div class="numero ok"><strong>Tratada</strong><span>a anemia</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="planos secao" id="planos" aria-labelledby="t-planos">
+  <div class="wrap">
+    <div class="intro revela">
+      <span class="rotulo-secao">Planos</span>
+      <h2 id="t-planos">Escolha <em>como começar</em></h2>
+      <p>Uma consulta para dar o primeiro passo ou um acompanhamento mais longo, para mudar com constância.</p>
+    </div>
+    <div class="planos-grade">
+      <article class="plano revela" id="sessao-pontual">
+        <span class="duracao"><b>1</b><span>consulta</span></span>
+        <h3>Sessão pontual</h3>
+        <p>Uma consulta individual com protocolo personalizado, para entender o seu caso e sair com direção.</p>
+        <div class="trilha" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i><i></i></div>
+        <span class="legenda">Primeiro passo</span>
+      </article>
+      <article class="plano destaque revela" id="plano-90-dias" style="--atraso:.08s">
+        <span class="duracao"><b>90</b><span>dias</span></span>
+        <h3>Plano 90 dias</h3>
+        <p>Três meses de acompanhamento com o aplicativo, materiais de apoio e ajustes no caminho.</p>
+        <div class="trilha" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i><i></i></div>
+        <span class="legenda">3 meses</span>
+      </article>
+      <article class="plano revela" id="plano-180-dias" style="--atraso:.16s">
+        <span class="duracao"><b>180</b><span>dias</span></span>
+        <h3>Plano 180 dias</h3>
+        <p>Seis meses de acompanhamento para consolidar os resultados e manter para a vida toda.</p>
+        <div class="trilha" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></div>
+        <span class="legenda">6 meses</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="avaliacoes secao" id="avaliacoes" aria-labelledby="t-aval">
+  <div class="wrap">
+    <div class="cabeca">
+      <div class="intro revela">
+        <span class="rotulo-secao">Avaliações no Google</span>
+        <h2 id="t-aval">O que as <em>pacientes contam</em></h2>
+      </div>
+      <div class="nota-google revela"><strong class="contar" data-ate="5" data-dec="1">5,0</strong><span><span class="estrelas-cheias" aria-hidden="true">★★★★★</span><br>42 avaliações no Google</span></div>
+    </div>
+  </div>
+  <div class="esteiras">
+    <div class="esteira calma">
+      <blockquote class="depo"><p>“Fui em busca de uma nutricionista e encontrei uma amiga, uma mulher que entendeu o momento que estou vivendo, me acolheu sem julgamentos. Sei que nem todos os dias serão perfeitos, porém você me mostrou que não estarei sozinha.”</p><footer><i aria-hidden="true">★★★★★</i>Paciente, no Google</footer></blockquote>
+      <blockquote class="depo escuro"><p>“Tive uma melhora no sono e estou conseguindo identificar os alimentos que atrapalham tanto o emagrecimento quanto as consequências do climatério! Você sai daquele estilo de consulta/dieta para um acompanhamento diário, troca de receitas, conversas.”</p><footer><i aria-hidden="true">★★★★★</i>Paciente, no Google</footer></blockquote>
+      <blockquote class="depo"><p>“Excelente profissional, fiquei mais de uma hora na consulta, protocolo personalizado, ela é muito atenciosa, explica exatamente como tudo funciona.”</p><footer><i aria-hidden="true">★★★★★</i>Paciente, no Google</footer></blockquote>
+      <blockquote class="depo"><p>“Após 1 mês de acompanhamento, já vejo resultados no meu corpo. A diminuição da barriga é o que mais me incomodava, após 2 gestações e uma rotina corrida.”</p><footer><i aria-hidden="true">★★★★★</i>Paciente, no Google</footer></blockquote>
+      <blockquote class="depo escuro"><p>“Estou me sentindo ótima, mais leve e comendo muito bem! Suas receitas são práticas de fazer no dia a dia. Até os lanches no trabalho consegui me organizar.”</p><footer><i aria-hidden="true">★★★★★</i>Paciente, no Google</footer></blockquote>
+      <div aria-hidden="true" style="display:contents">
+        <blockquote class="depo"><p>“Fui em busca de uma nutricionista e encontrei uma amiga, uma mulher que entendeu o momento que estou vivendo, me acolheu sem julgamentos. Sei que nem todos os dias serão perfeitos, porém você me mostrou que não estarei sozinha.”</p><footer><i>★★★★★</i>Paciente, no Google</footer></blockquote>
+        <blockquote class="depo escuro"><p>“Tive uma melhora no sono e estou conseguindo identificar os alimentos que atrapalham tanto o emagrecimento quanto as consequências do climatério! Você sai daquele estilo de consulta/dieta para um acompanhamento diário, troca de receitas, conversas.”</p><footer><i>★★★★★</i>Paciente, no Google</footer></blockquote>
+        <blockquote class="depo"><p>“Excelente profissional, fiquei mais de uma hora na consulta, protocolo personalizado, ela é muito atenciosa, explica exatamente como tudo funciona.”</p><footer><i>★★★★★</i>Paciente, no Google</footer></blockquote>
+        <blockquote class="depo"><p>“Após 1 mês de acompanhamento, já vejo resultados no meu corpo. A diminuição da barriga é o que mais me incomodava, após 2 gestações e uma rotina corrida.”</p><footer><i>★★★★★</i>Paciente, no Google</footer></blockquote>
+        <blockquote class="depo escuro"><p>“Estou me sentindo ótima, mais leve e comendo muito bem! Suas receitas são práticas de fazer no dia a dia. Até os lanches no trabalho consegui me organizar.”</p><footer><i>★★★★★</i>Paciente, no Google</footer></blockquote>
+      </div>
+    </div>
+  </div>
+  <div class="wrap"><p class="fonte">Trechos de avaliações publicadas no perfil da Carolina Mendes Alves no Google. Passe o mouse para pausar.</p></div>
+</section>
+
+<section class="sobre secao" id="sobre" aria-labelledby="t-sobre">
+  <div class="wrap">
+    <div class="grade">
+      <div class="colagem revela">
+        <svg class="fio" viewBox="0 0 400 500" preserveAspectRatio="none" aria-hidden="true"><path d="M20 470 C -20 300, 60 120, 200 60 S 420 40, 390 220"/></svg>
+        <div class="principal"><img src="img/carol-retrato.jpg?v=1" alt="Carol de óculos, sorrindo, com a mão no rosto" width="500" height="1060" loading="lazy"></div>
+        <div class="menor"><img src="img/carol-sobre.jpg?v=1" alt="Carol de blazer branco no consultório" width="819" height="1024" loading="lazy"></div>
+        <div class="selo-40" aria-hidden="true"><div><b>40+</b><span>e vivendo<br>a menopausa</span></div></div>
+      </div>
+      <div class="texto revela" style="--atraso:.1s">
+        <span class="rotulo-secao">Sobre a Carol</span>
+        <h2 id="t-sobre">Antes de ser nutricionista, <em>sou uma mulher 40+</em> tentando dar conta de tudo.</h2>
+        <p>Por muito tempo, os exames da Carol estavam “normais”, mas o corpo não estava. Vieram a ansiedade, a insônia, os calores, o cansaço. Como ela era “nova demais pra isso”, os sintomas foram sendo ignorados.</p>
+        <p>Hoje ela vive a menopausa: tem dois trabalhos e, no meio de tudo isso, ainda cuida da gestão, do marketing, das vendas, das pacientes, do treino e do estudo. E também sente na pele a frustração de ver o corpo mudar.</p>
+        <p>Por isso ela fala de menopausa: informação dá direcionamento, e muita mulher se sente estranha, cansada ou fora do eixo achando que o problema é ela. Não é.</p>
+        <p class="destaque-frase">Saber a teoria me dá direção, mas viver o processo me dá empatia.</p>
+        <p class="primavera">A sua <em>Segunda Primavera</em> não precisa ser uma cobrança para florescer. Ela pode começar dando espaço para entender o que você sente e cuidar de você.</p>
+        <span class="crn">Carolina Mendes Alves · CRN 3 16089</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contato secao" id="contato" aria-labelledby="t-contato">
+  <img class="marca-agua" src="img/marca-simbolo.png?v=1" alt="" width="365" height="219" loading="lazy">
+  <div class="wrap">
+    <div class="revela">
+      <div class="convite"><img src="img/carol-perfil.jpg?v=1" alt="" width="150" height="150"><span><span class="online">Conversa gratuita</span><br>com a Carol pelo WhatsApp</span></div>
+      <h2 id="t-contato">Descubra o que está <em>travando você</em></h2>
+      <p class="txt">Conte o seu caso e saiba qual programa faz sentido para você, com informações sobre horários disponíveis e valores.</p>
+      <a class="btn" data-wa="Olá, Nutri! Vim pelo site e gostaria de agendar uma consulta." href="https://wa.me/5511911254148"><svg class="icone" aria-hidden="true"><use href="#i-wa"/></svg>Agendar consulta</a>
+    </div>
+    <div class="mapa-cartao revela" style="--atraso:.1s">
+      <div class="mapa"><iframe title="Mapa do consultório na Av. Dom Pedro II, 131, Salto, SP" src="https://maps.google.com/maps?q=Av.%20Dom%20Pedro%20II%2C%20131%2C%20Centro%2C%20Salto%20-%20SP%2C%2013320-240&z=16&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+      <div class="info">
+        <div class="largo"><strong>Consultório</strong><p>Av. Dom Pedro II, 131, Centro, Salto, SP, 13320-240 · <a href="https://www.google.com/maps/search/?api=1&query=Av.%20Dom%20Pedro%20II%2C%20131%2C%20Salto%20SP" target="_blank" rel="noopener">Abrir no Google Maps</a></p></div>
+        <div><strong>Atendimento</strong><p>Presencial de segunda a sexta, das 9h às 18h<br>On-line para onde você estiver</p></div>
+        <div><strong>Contato</strong><p>WhatsApp <a data-wa="Olá, Nutri! Vim pelo site e tenho uma dúvida." href="https://wa.me/5511911254148">(11) 91125-4148</a><br><a href="mailto:carolina.mendesalves@yahoo.com">carolina.mendesalves@yahoo.com</a></p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="rodape">
+  <div class="wrap">
+    <div class="grade">
+      <div><img class="logo" src="img/logo-branco.png?v=1" alt="Dra. Carolina Mendes, Nutricionista. Transformando seu mundo com saúde e bem estar" width="906" height="343" loading="lazy"></div>
+      <div>
+        <h4>Programas</h4>
+        <ul>
+          <li><a href="#menopausa-no-eixo">Menopausa no Eixo</a></li>
+          <li><a href="#virada-de-chave">Virada de Chave</a></li>
+          <li><a href="#programa-evolucao">Programa Evolução</a></li>
+          <li><a href="#e-books">E-books e receitas</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <ul>
+          <li><a data-wa="Olá, Nutri! Vim pelo site e tenho uma dúvida." href="https://wa.me/5511911254148">WhatsApp</a></li>
+          <li><a href="https://www.instagram.com/nutricionistacarolinamendes/" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.linkedin.com/in/carolina-mendes-alves-65097447/" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Onde</h4>
+        <ul>
+          <li>Av. Dom Pedro II, 131</li>
+          <li>Centro, Salto, SP</li>
+          <li>On-line e presencial</li>
+        </ul>
+      </div>
+    </div>
+    <div class="base"><span>© <span id="ano">2026</span> Carolina Mendes Alves, nutricionista. CRN 3 16089.</span><span>Transformando seu mundo com saúde e bem estar</span></div>
+  </div>
+</footer>
+
+<div class="barra-movel oculta">
+  <a class="btn" data-wa="Olá, Nutri! Vim pelo site e gostaria de agendar uma consulta." href="https://wa.me/5511911254148"><svg class="icone" aria-hidden="true"><use href="#i-wa"/></svg>Agendar consulta</a>
+</div>
+
+<script>
+(function(){
+  var reduzir = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var numero = "5511911254148";
+  document.querySelectorAll("[data-wa]").forEach(function(a){
+    a.href = "https://wa.me/" + numero + "?text=" + encodeURIComponent(a.getAttribute("data-wa"));
+    a.target = "_blank"; a.rel = "noopener";
+  });
+  var ano = document.getElementById("ano"); if (ano) ano.textContent = new Date().getFullYear();
+
+  /* Virada de chave, com a "noite" se espalhando a partir do botão */
+  var secaoVirada = document.getElementById("estrategia"), chave = secaoVirada.querySelector(".interruptor");
+  var virar = function(nova){
+    var r = chave.getBoundingClientRect(), s = secaoVirada.getBoundingClientRect();
+    secaoVirada.style.setProperty("--cx", (r.left + r.width / 2 - s.left) + "px");
+    secaoVirada.style.setProperty("--cy", (r.top + r.height / 2 - s.top) + "px");
+    secaoVirada.classList.add("tocou");
+    secaoVirada.classList.toggle("nova", nova);
+    chave.setAttribute("aria-checked", nova ? "true" : "false");
+    chave.setAttribute("aria-label", nova ? "Mostrar a estratégia antiga" : "Mostrar a nova estratégia");
+  };
+  chave.addEventListener("click", function(){ virar(chave.getAttribute("aria-checked") !== "true"); });
+  secaoVirada.querySelector(".rot-antes").addEventListener("click", function(){ virar(false); });
+  secaoVirada.querySelector(".rot-nova").addEventListener("click", function(){ virar(true); });
+
+  /* Contadores */
+  var contar = function(el){
+    if (el.dataset.feito) return; el.dataset.feito = "1";
+    var alvo = parseFloat(el.getAttribute("data-ate")), dec = parseInt(el.getAttribute("data-dec") || "0", 10), pre = el.getAttribute("data-pre") || "";
+    var fmt = function(v){ return pre + v.toFixed(dec).replace(".", ","); };
+    if (reduzir) { el.textContent = fmt(alvo); return; }
+    var t0 = null, dur = 1600;
+    var passo = function(t){
+      if (!t0) t0 = t;
+      var p = Math.min((t - t0) / dur, 1), e = 1 - Math.pow(1 - p, 3);
+      el.textContent = fmt(alvo * e);
+      if (p < 1) requestAnimationFrame(passo); else el.textContent = fmt(alvo);
+    };
+    requestAnimationFrame(passo);
+  };
+
+  if ("IntersectionObserver" in window) {
+    var io = new IntersectionObserver(function(es){
+      es.forEach(function(e){
+        if (!e.isIntersecting) return;
+        e.target.classList.add("visivel");
+        e.target.querySelectorAll(".contar").forEach(contar);
+        io.unobserve(e.target);
+      });
+    }, { threshold: 0.15, rootMargin: "0px 0px -40px 0px" });
+    document.querySelectorAll(".revela").forEach(function(el){ io.observe(el); });
+  } else {
+    document.querySelectorAll(".revela").forEach(function(el){ el.classList.add("visivel"); el.querySelectorAll(".contar").forEach(contar); });
+  }
+
+  /* Rolagem: topo, barra de progresso, linha do passo a passo, cartões empilhados */
+  var topo = document.getElementById("topo"), barraProg = document.querySelector(".progresso");
+  var trilha = document.querySelector(".trilha-passos"), passos = trilha.querySelectorAll(".passo");
+  var cartoes = Array.prototype.slice.call(document.querySelectorAll(".cartao-prog"));
+  var links = Array.prototype.slice.call(document.querySelectorAll(".nav ul a"));
+  var pedido = false;
+  var aoRolar = function(){
+    pedido = false;
+    var y = window.scrollY, h = document.documentElement.scrollHeight - innerHeight;
+    topo.classList.toggle("rolou", y > 8);
+    barraProg.style.transform = "scaleX(" + (h > 0 ? y / h : 0) + ")";
+
+    var t = trilha.getBoundingClientRect();
+    var p = Math.min(Math.max((innerHeight * .7 - t.top) / t.height, 0), 1);
+    trilha.style.setProperty("--p", p.toFixed(3));
+    passos.forEach(function(el, i){ el.classList.toggle("aceso", p >= (i / (passos.length - 1)) * .98 || p >= .99); });
+
+    if (!reduzir && innerWidth > 640) {
+      cartoes.forEach(function(c, i){
+        var prox = cartoes[i + 1], corpo = c.firstElementChild;
+        if (!prox) { corpo.style.transform = ""; corpo.style.filter = ""; return; }
+        var a = c.getBoundingClientRect(), b = prox.getBoundingClientRect();
+        var sobre = Math.min(Math.max((a.bottom - b.top) / a.height, 0), 1);
+        corpo.style.transform = "scale(" + (1 - sobre * .06).toFixed(4) + ")";
+        corpo.style.filter = "brightness(" + (1 - sobre * .18).toFixed(3) + ")";
+      });
+    }
+
+    var atual = null;
+    links.forEach(function(l){ var s = document.querySelector(l.getAttribute("href")); if (s && s.getBoundingClientRect().top < innerHeight * .4) atual = l; });
+    links.forEach(function(l){ l.classList.toggle("ativo", l === atual); });
+  };
+  window.addEventListener("scroll", function(){ if (!pedido) { pedido = true; requestAnimationFrame(aoRolar); } }, {passive:true});
+  window.addEventListener("resize", aoRolar);
+  aoRolar();
+
+  /* Retrato da abertura acompanha levemente o mouse */
+  var retrato = document.querySelector("[data-paralaxe]");
+  if (retrato && !reduzir && window.matchMedia("(hover:hover) and (pointer:fine)").matches) {
+    var abertura = document.querySelector(".abertura");
+    abertura.addEventListener("pointermove", function(e){
+      var x = e.clientX / innerWidth - .5, y = e.clientY / innerHeight - .5;
+      retrato.style.transform = "translate3d(" + (x * -14).toFixed(1) + "px," + (y * -10).toFixed(1) + "px,0)";
+    });
+    abertura.addEventListener("pointerleave", function(){ retrato.style.transform = ""; });
+    retrato.style.transition = "transform .6s cubic-bezier(.2,.7,.2,1)";
+  }
+
+  /* Barra fixa no celular: aparece depois da abertura e some no contato */
+  var barra = document.querySelector(".barra-movel"), hero = document.querySelector(".abertura"), contato = document.getElementById("contato");
+  if (barra && "IntersectionObserver" in window) {
+    var estado = { hero: true, fim: false };
+    var atualizar = function(){ barra.classList.toggle("oculta", estado.hero || estado.fim); };
+    new IntersectionObserver(function(es){ es.forEach(function(e){ estado.hero = e.intersectionRatio > 0.25; }); atualizar(); }, { threshold:[0,0.25,0.5] }).observe(hero);
+    new IntersectionObserver(function(es){ es.forEach(function(e){ estado.fim = e.isIntersecting; }); atualizar(); }).observe(contato);
+  } else if (barra) { barra.classList.remove("oculta"); }
+
+  /* Menu do celular */
+  var botao = document.querySelector(".menu-botao"), menu = document.getElementById("menu-movel"), rotulo = botao.querySelector(".rotulo");
+  var definirAltura = function(){ document.documentElement.style.setProperty("--altura-topo", topo.offsetHeight + "px"); };
+  var alternarMenu = function(abrir){
+    definirAltura();
+    botao.setAttribute("aria-expanded", abrir ? "true" : "false");
+    rotulo.textContent = abrir ? "Fechar" : "Menu";
+    menu.classList.toggle("aberto", abrir);
+    document.body.classList.toggle("menu-aberto", abrir);
+  };
+  botao.addEventListener("click", function(){ alternarMenu(botao.getAttribute("aria-expanded") !== "true"); });
+  menu.querySelectorAll("a").forEach(function(a){ a.addEventListener("click", function(){ alternarMenu(false); }); });
+  document.addEventListener("keydown", function(e){ if (e.key === "Escape" && menu.classList.contains("aberto")) { alternarMenu(false); botao.focus(); } });
+  window.addEventListener("resize", function(){ definirAltura(); if (window.innerWidth > 980) alternarMenu(false); });
+})();
+</script>
+</body>
+</html>
